@@ -53,6 +53,7 @@ namespace unitTest
 
             var result = controller.Create(modelList);
 
+            Assert.NotNull(result);
 
         }
 
@@ -85,7 +86,7 @@ namespace unitTest
 
             var result = controller.Delete(modelList.Id);
 
-
+            Assert.NotNull(result);
         }
         [Fact]
         public void GetByIdTest()
