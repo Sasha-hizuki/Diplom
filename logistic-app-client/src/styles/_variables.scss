@@ -1,0 +1,26 @@
+//
+// Global colors
+//
+
+$white: #fff;
+$light: #FAFAFF;
+$gray: #EBEBFF;
+$dark: #30343F;
+$black: #000;
+
+$space-blue: #273469;
+$turquoise: #42D9C8;
+
+$colors: () !default;
+
+$colors: map-merge(
+  (
+    "space-blue": $space-blue,
+    "turquoise": $turquoise
+  ),
+  $colors
+);
+
+$primary: $turquoise !default;
+$primary-light: lighten($primary, 10%);
+$primary-dark: darken($primary, 15%) !default;
